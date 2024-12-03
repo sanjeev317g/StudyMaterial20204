@@ -1,0 +1,119 @@
+Manual testing:
+
+1. STLC-Requirement analysis, Test planning, test case development, Test environment setup, test execution, test closure
+2. SDLC-Planning, analysis, design, development, testing, implementation and maintenance 
+3. smoke, sanity, UI testing, functional testing, regression testing, 
+4. agile methodology
+5. waterfall model
+6. blackbox testing, white box testing, greybox testing
+7. test case, bug life cycle
+
+
+8. difference between test strategy and test plan, test scenario
+9. JIRA-queries, defects, stories, tasks, subtasks, stories links to defects, link test rail
+10. builds-types of builds,
+11. installation of builds
+12. check the builds in artifactory
+13. what is artifacotry-a repository manager that supports all available software package types, 
+   enabling automated continous integration and delivery.
+14. requirement documents-uis spec, sketch, design system
+15. scrum process and retrospective meetings
+16. difference between retesting and sanity testing
+17. Integration testing- The purpose of Integration tests is to make sure that all modules integrate and work together as expected.
+18. Regression testing- Regression testing is a type of testing that deals with testing a previously tested software or application to ensure that the existing features were working
+
+19. AM and FM stations 
+530-1710 = 1180
+87.7-107.9=20.2
+
+20. what is adb and their commands
+
+21. boundary value analysis in manual testing
+Boundary Value Analysis (BVA) is a black-box testing technique used in software testing to identify errors at boundaries 
+rather than finding those that exist in the "middle" of input ranges.
+Minimum Valid Value: Test with 1 (just above the minimum valid value) and 2 (minimum valid value).
+Maximum Valid Value: Test with 99 (maximum valid value) and 100 (just below the maximum valid value).
+Invalid Values: Test with 0 (just below the minimum valid value) and 101 (just above the maximum valid value).
+
+22. difference between seviority and priority
+Priority refers to the order in which defects should be addressed and fixed
+Severity refers to the impact of a defect on the functionality of the application.(Critical, Major, Moderate, Minor, and Cosmetic)
+highpriority and low severioty example
+
+
+new topics
+------------------
+1. defect triage
+Bug triage in software testing:
+In software engineering, triaging is a process where each bug is prioritized on its severity, frequency, risk, impact on the team, etc. 
+The goal of triage is to evaluate, prioritize, and assign the resolution of bugs or defects
+
+2. entry criteria and exit criteria in testing
+Meeting the entry criteria ensures the testing environment is set up correctly and test cases and data are ready for execution. 
+The exit criteria in test execution confirm that the test execution phase has been completed according to the defined testing scope and objectives
+
+3. defereed state in defects
+Rejected: If the developer feels that the bug is not genuine, he rejects the bug. Then the state of the bug is changed to “rejected”. 
+Deferred: The bug, changed to deferred state means the bug is expected to be fixed in next releases.
+
+4. if you get build at the end of the sprint what will you do as a tester
+5. where do you perform regression testing
+6. difference between regression and retesting
+7. if the defect is raised, developer said it is not a issue but as per the requirement it is issue what you will do
+8. on which bases will do estimation for user stories
+Agile estimation relies on using story points and the Fibonacci sequence, but they're not methods themselves. 
+Story points are a unit of measurement–numbers that express the size of a piece of work compared to other pieces of work.
+They factor in aspects such as effort, risk, and complexity.
+
+
+===============================================================================
+JIRA:
+1. Dashborads
+=====================================================
+
+=================================
+
+spil over: stories moved to next sprint, if any story is moved to next sprint
+bug aging: past bugs
+
+===========================
+agile methodology:
+1. scrum process--we are using 15 days sprint
+2. in sprint ceremony--a. sprint planning- discus about stories planned for the sprint, b. status call- daily scrum meetings
+c. sprint review- , d. retrospective
+In Agile methodology, a Sprint Ceremony refers to a set of events or meetings that occur within the framework of a sprint. 
+Here's a breakdown of the ceremonies you mentioned:
+
+a. Sprint Planning: This is a meeting at the beginning of each sprint where the team plans the work to be done during that sprint. 
+The Product Owner presents the prioritized backlog items (stories) and the team discusses and selects the stories they believe they can 
+complete during the sprint. The outcome of this meeting is the sprint backlog, which includes the selected stories and the tasks required to complete them.
+
+b. Daily Scrum Meetings (or Stand-up): These are brief daily meetings where the team members discuss their progress, 
+what they plan to do next, and any impediments they are facing. It's a time-boxed meeting typically lasting around 15 minutes. 
+The focus is on coordination and ensuring everyone is aligned towards achieving the sprint goal.
+
+c. Sprint Review: At the end of each sprint, the team presents the completed work to the stakeholders. 
+This meeting allows stakeholders to provide feedback on the delivered product increment. The team demonstrates the functionality they 
+have built and gathers feedback, which can then be used to refine the product backlog.
+
+d. Retrospective: Also held at the end of each sprint, the retrospective is a meeting where the team reflects on their process 
+and identifies areas for improvement. They discuss what went well, what didn't, and what actions can be taken to improve their processes 
+in the next sprint. The focus is on continuous improvement.
+
+So, to summarize:
+
+Sprint Planning: Discuss about stories planned for the sprint.
+Daily Scrum Meetings: Status call where team members discuss their progress.
+Sprint Review: Presentation of completed work to stakeholders.
+Retrospective: Reflecting on the sprint and planning for improvement.
+
+
+jira:
+product backlog: all requirement stories
+sprint backlog: stories not required/ not in priority those are moved to backlogs
+
+if bug with low priority and high seviority what we need to do
+it means that although the impact of the bug is significant, it might not be urgent to fix immediately based on its priority level
+==================================================================
+
+

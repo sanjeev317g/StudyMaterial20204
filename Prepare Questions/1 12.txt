@@ -1,0 +1,291 @@
+Armstrong: n=153, s=0, temp=n
+While(n>0)
+{
+r=n%10
+s=s+r*r*r
+n=n/10
+}
+=====================================
+Palindrome or reverse of number: n=121, s=0, temp=n
+while(n>0)
+{
+r=n%10;
+s=s*10+r;
+n=n/10;
+}
+======================================
+Swapping of 2 no's without 3rd variable:
+a=3, b=5
+a=a+b
+b=a-b
+a=a-b
+==========================================
+Swapping of 2 no's with 3rd variable:
+a=3, b=5, c
+c=a;
+a=b;
+b=c;
+========================================
+Factorial: 3!=6, fact=1
+for(i=1;i<=3;i++)
+{
+fact=fact*i;
+}
+=============================
+multiplication of table
+int n=10 10*1=10
+for(int i=1;i<=10;i++)
+{
+sysout("10*"+i+"="+(10*i))
+}
+=================================
+Fibinacci series:
+a=0, b=1, c
+print(a,b)
+for(int i=1;i<=10;i++)
+{
+c=a+b;
+a=b;
+b=c;
+}
+=====================================
+prime number:
+
+while(i<=n)
+{
+if(n%i==0)
+{
+c++
+}
+i++
+}
+if(c==2)
+{
+sysout(prime)
+}
+else
+sysout(not prime)
+===============================
+Swapping of 2 strings without 3rd variable
+
+String a=satya, b=uma
+a=a+b
+b=a.substring(0, a.length()-b.length())
+a=a.substring(b.length())
+print a,b
+===============================
+remove numeric values from string:
+
+string str="house123rent4"
+str=str.replaceAll("[0-9]","")
+print(str)
+===============================
+remove vowels from string:
+
+String str="satya"
+str=str.replaceAll("[aeiouAEIOU]","")
+print(str)
+===============================
+print duplicate characters of string:
+
+String str="mirror"
+Char[] ch=str.toCharArray();
+for(i=0;i<str.length();i++)
+{
+for(j=i+1;j<str.length();j++)
+{
+if(ch[i]==ch[j])
+print(ch[j])
+}
+}
+================================
+remove duplicate character from string and print remaining 
+
+String s1="mirror"
+String s2=""
+for(int i=0;i<s1.length()-1;i++)
+{
+if(s2.indexof(s1.charAt(i))==-1)
+{
+s2=s2+s1.charAt(i)
+}
+}
+==================================
+Reverse of string: 
+
+String str1="Satya"
+String str2=""
+for(i=str1.length()-1;i>=0;i--)
+{
+str2=str2+str1.charAt(i)
+}
+sysout(str2)
+output: aytaS
+
+method:2
+String s1="satya devi";
+char ch[]=s1.toCharArray();
+for (int i = s1.length()-1; i >= 0; i--) 
+{
+System.out.print(ch[i]);
+}
+output: ived aytas
+		
+==================================
+Reverse of the words in sentence
+
+String s1="moon and stars"
+String s2="";
+String s3[]=s1.split("");
+for(i=0;i<=s3.length-1;i++)
+{
+s2=s3[i]+" "+s2;
+}
+print s2
+
+==================================
+
+find a duplicate word from sentenance
+
+String s1="ak is pak so pak is ak";
+String[] s3=s1.split(" ");
+for (int i = 0; i < s3.length; i++) {
+for (int j = i+1; j < s3.length; j++) {
+  if (s3[i].equals(s3[j])) {
+  System.out.println("duplicate words are: "+s3[j]);
+		}
+	}
+output: ak pak
+
+==================================
+2nd largest number in given array, or acending order or, largest number in array
+
+int[] a= {1,2,5,6,3,2};
+int temp;
+for (int i = 0; i < a.length; i++) {
+for (int j = i+1; j < a.length; j++) {
+if (a[i]>a[j]) {
+temp=a[i];
+a[i]=a[j];
+a[j]=temp;
+}
+}
+}
+System.out.println("2nd larget is "+a[a.length-2]);  a[4]
+System.out.println(Arrays.toString(a));  //1,2,2,3,5,6
+====================================
+
+
+1. get digits from string and then add
+string s1="sa1t2ya3"
+output 1+2+3=6
+
+String s1 = "sa1t2ya3";
+int sum=0;
+for (int i = 0; i <s1.length(); i++) {
+char c=s1.charAt(i);
+if (Character.isDigit(c)) {
+sum = sum+Character.getNumericValue(c);
+				
+}
+}
+System.out.println("sum of characters in string "+sum);
+
+======================================
+
+Given an array of integers numbers and an integer target,
+return indexes of the two numbers such that they add up to target.
+Input: nums = [2,7,11,15], target = 13
+Output: [0,2]
+
+==========================================
+
+
+8. Array Sorting: Implement sorting algorithms like bubble sort, merge sort, or quicksort.
+9. Binary Search: Implement a binary search algorithm to find an element in a sorted array.
+10. Duplicate Elements in an Array: Find and print duplicate elements in an array.
+11. Linked List Reversal:
+Reverse a singly-linked list.
+12. Matrix Operations: Perform matrix operations like addition, multiplication, or transpose.
+13. Implement a Stack: Create a stack data structure and implement basic operations (push, pop).
+14. Implement a Queue: Create a queue data structure and implement basic operations (enqueue, dequeue).
+15. Inheritance and Polymorphism: Implement a class hierarchy with inheritance and demonstrate polymorphism.
+16. Exception Handling: Write code that demonstrates the use of try-catch blocks to handle exceptions.
+17. File I/O: Read from and write to a file using Java's file 1/0 capabilities.
+18. Multithreading: Create a simple multithreaded program and demonstrate thread synchronization.
+19. Lambda Expressions: Use lambda expressions to implement functional interfaces.
+20. Recursive Algorithms: Solve a problem using recursion, such as computing the factorial or Fibonacci sequence.
+
+program to seperate characters in string
+
+StringBuilder in Java is a class used to create a mutable, or in other words, a modifiable succession of characters - to store elements dynamically
+public class SeparateCharacters {
+    public static void main(String[] args) {
+        String s1 = "satya123*&^";
+
+        // Initialize strings to store separated characters
+        StringBuilder letters = new StringBuilder();
+        StringBuilder numbers = new StringBuilder();
+        StringBuilder specialChars = new StringBuilder();
+
+        // Iterate through each character in the string
+        for (int i = 0; i < s1.length(); i++) {
+            char ch = s1.charAt(i);
+
+            // Check if the character is a letter
+            if (Character.isLetter(ch)) {
+                letters.append(ch);
+            }
+            // Check if the character is a digit
+            else if (Character.isDigit(ch)) {
+                numbers.append(ch);
+            }
+            // All other characters are considered special characters
+            else {
+                specialChars.append(ch);
+            }
+        }
+
+        // Print the separated characters
+        System.out.println("Letters: " + letters.toString());
+        System.out.println("Numbers: " + numbers.toString());
+        System.out.println("Special Characters: " + specialChars.toString());
+    }
+}
+
+===============================================
+character occurances in java - {a=2, s=1, t=1, y=1}
+
+String s1="satya";
+//for storing characters and character count
+Map<Character, Integer> charcount=new HashMap<Character, Integer>();
+for(Character ch:s1.toCharArray()) {
+	if (charcount.containsKey(ch)) {
+		charcount.put(ch, charcount.get(ch)+1);
+		
+	} else {
+		charcount.put(ch, 1);
+
+	}
+}
+System.out.println(charcount);
+
+============================================
+//Remove all occurrences of an Element
+//Input: nums = [3,2,2,3], val = 3
+//Output: nums = [2,2]
+
+int[] nums = {3, 2, 2, 3};
+        int val = 3;
+
+        List<Integer> list=new ArrayList<Integer>();
+      
+        for (int num : nums) {
+            if (num != val) {
+                list.add(num);
+            }
+        }
+
+        System.out.println(list);
+==============================================
+

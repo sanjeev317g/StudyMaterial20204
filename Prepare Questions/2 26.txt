@@ -1,0 +1,764 @@
+==========================================================================================
+
+JAVA:
+1. public static void main
+2. oops concepts-object, class, inheritance, polymorphism-method overloading and overriding, 
+abstraction and encapsulation
+
+polymorphism, inheritance and interface used in your project
+
+multiple inheritance supported or not
+
+3. Accessmodifies - private, default, protected, public(difference between default and protected)
+4. interface 
+5. constructor
+   a constructor is a block of codes similar to the method. It is called when an instance of the class is created.
+    At the time of calling constructor, memory for the object is allocated in the memory
+
+   constructor:
+   one class has multiple methods, one method has same name as class name which methods will execute
+
+6. keywords-this, static, super, final
+this - refers to the current object
+static - keyowrd used for memory management
+super - refers to the immediate parent class object
+final - variable - can not change the value of variable
+      - method - can not override that method
+      - class - can not extend it
+
+7. exceptions in java
+8. try, catch, throw, throwable
+9. datatypes, variable, methods
+
+premitive and non premitive datatypes
+
+Primitive data types - includes byte , short , int , long , float , double , boolean and char. 
+Non-primitive data types - such as String , 
+Arrays and Classes (you will learn more about these in a later chapter)
+
+Primitive data types are immutable, meaning their values cannot be changed once assigned. 
+Non-primitive data types are mutable and can be modified
+
+10. why main method is static
+    Java main() method is always static, so that compiler can call it without the creation of an object. 
+    In any Java program, the main() method is the starting point from where compiler starts program execution
+
+11. class1 has one method has void return type class2 has other method has integer return type
+ can we apply overriding to these methods(not possible)
+
+12. can we create java program with out class or main method
+ for main method:
+ yes we can execute java program without main method by using static block. static block in java is a group of statements
+ that gets executed only once when the class is loaded into the memory by java clssloader, it is known as 
+ static initialization block
+ for class:
+ Every Java program requires the presence of at least one class
+
+13. collectins concepts(hashmap, hashset)
+Java HashSet: A HashSet is a collection of items where every item is unique, and it is found in the java.util package:
+Hash map: A HashMap however, store items in "key/value" pairs
+
+Difference between list and array in java
+an array is a data structure generally consisting of sequential memory storing a collection of objects. 
+List is an interface in Java, which means that it may have multiple implementations
+
+14. for each loop
+
+for (elementType element : collection) {
+    // Body of the loop
+}
+The "for-each" loop in Java, also known as the enhanced for loop, provides a more concise way to iterate over elements in arrays or collections 
+(such as Lists, Sets, and Maps) without the need for explicit indexing or iterator manipulation.
+
+elementType: This is the data type of the elements in the collection.
+element: This is a variable that represents each individual element in the collection during each iteration.
+collection: This is the array or collection over which you want to iterate.
+
+14. arraylist - opps concepts in java
+
+15. string is related to which framework(string is not related to any framework - string stores the group of characters)
+
+16. static methods and non static methods
+
+17. difference between exception and error(we can handle exception and can not handle error)
+18. difference types of exceptions in java
+
+19. can we create object for interface
+We can't create object of interfaces because of the reason that : Interface is basically a complete abstract class. 
+That means Interface only have declaration of method not their implementation(method body)
+
+20. finally block--when will finally block executed
+21. static block
+
+22. exceptions in java
+
+23. difference between hash map and hash set(hashmap method return type, hashset return type)
+24. difference between list and set(if we declare method as list what is turn type of that method)
+
+new concepts in java:
+---------------------------------------------
+
+1. file upload
+javascriptExectuter js= (javascriptExectutor)driver;
+js.executescript(script, arguments)
+
+2. how to read xml file in java
+
+3. what is lamda expressions in java
+
+
+
+============================
+general questions
+
+
+2. x lies between o and 1, what is the smallest or largest value
+options: x, x*x, 1/x, -x
+
+3. 20 persons average equal to zero, then persons equal to
+
+=================================================
+New topics:
+
+1. cucumber BDD framework - glue-if feature file test step matched with the step definitions if will will display in glue code otherwise show errors
+step definitions-nothing but keywords, hooks - preconditions and post conditions of the test cases, feature files - those contains test cases which are in gerkin language
+scenario outline-
+hook and background key difference
+2. project - folder structure, cucumber framework
+3. python, robot framework
+4. API testing
+5. cypress testing - web application testing, visual studio install-
+6. java script
+7. idea about sql
+8. java8 features 
+9. data driven testing
+10. IOS testing
+11. API testing
+12. caple scripting, hil testing-long process
+13. tosca
+================================================
+
+
+Recursion in Java:
+Recursion in java is a process in which a method calls itself continuously. A method in java that calls itself is called recursive method.
+It makes the code compact but complex to understand.
+
+Lambda Expressions:
+A lambda expression is a short block of code which takes in parameters and returns a value. 
+Lambda expressions are similar to methods, but they do not need a name and they can be implemented right in the body of a method
+
+
+
+=======================================================
+mahesh question
+1. data resonance
+2. 3 employes salaries, thorugh selenium
+3. create login page through keyword driven framework
+4. get text method
+5. host method
+6. data listeners
+
+===============================================
+
+@virstusa pavan
+1. java related programs(duplicate characters), concepts
+2. oops in project, project related
+3. appium lo properties ela get chestunaru
+4. cucumber
+5. 
+
+=======================================
+
+@virtusa job description
+
+1. intellij ide
+2. selenium grid
+3. cucumber BDD
+4. gherkin syntax and TDD 
+5. jira and confluence
+6. request response mechanism
+error codes in api
+7. Working experience on CI/CD Pipeline concept along with groovy scripting
+8. Basic knowledge of any cloud based infrastructure platforms, preferably AWS
+
+
+
+
+========================================================
+
+ashok shah @virtusa interview
+sunil d
+
+
+
+1. finalized in java
+2. 
+
+========================================
+
+initializer block, finalizer block
+
+Xpath axes--https://www.youtube.com/watch?v=aAWvwGFkySI
+//label[text()="First Name "]/following-sibling::input[1]
+
+
+Intializer block:
+
+Instance Initializer Block (IIB): This block of code is executed when an instance of the class is created, before the constructor is invoked. 
+It is declared without any keywords and is enclosed within curly braces {}.
+class MyClass {
+    {
+        // Instance initializer block
+        // This block is executed every time an instance of MyClass is created
+        // It is used to initialize instance variables or perform other instance-level initialization tasks
+        System.out.println("Instance initializer block");
+    }
+
+    // Constructor
+    public MyClass() {
+        System.out.println("Constructor");
+    }
+}
+
+Static Initializer Block (SIB): This block of code is executed when the class is loaded into memory, before any instance of the class is created. 
+It is declared using the static keyword.
+class MyClass {
+    static {
+        // Static initializer block
+        // This block is executed when MyClass is loaded into memory
+        // It is used to initialize static variables or perform other class-level initialization tasks
+        System.out.println("Static initializer block");
+    }
+}
+
+
+Finalized block:
+
+Garbage Collection and Finalization: When an object becomes eligible for garbage collection, the Java Virtual Machine (JVM) might call the finalize() 
+method on that object before reclaiming its memory. 
+The purpose of the finalize() method is to perform cleanup actions or release resources held by the object before it is garbage collected.
+
+======================================
+presentation need to improve
+
+1. verify method in selenium
+2. brach switching in git
+3. 
+oops in real time
+array list linked list
+waits
+exception
+sort without using method
+@dataprovider-testng
+Xpath-without using text name
+
+satyabharadwaj955
+
+=============================
+
+
+====================
+@value labs @srikanth
+1. Black box testing and white box testing
+2. 
+6. regression, smoke, sanity
+7. test case template
+8. selenium-dropdown
+9. absolute xpath, relative xapth, / and // diff in xpath
+10. implicit wait, explicit wait, waits
+11. find element and find elements diff
+12. assertion
+13. final and finally diff
+14. diff btw throw and throws
+The main difference between Throw and Throws keywords in Java programming is that you can use the Throw keyword 
+to throw an exception explicitly in the code. In contrast, you can use the Throws keyword to declare that a method might throw an exception in the code.
+
+
+14. string buffer
+15. inheritance
+16. polymorphism(runtime polymorphism and compile time polymorphism)
+17. deadlock
+18.robotframework-structure.
+
+API testing
+1.Introduction.
+2.API-testing 
+2a.Http methods.
+b.httpURL.
+c.http status codes.(200-500).
+3.selenium difference betwwen2, 3 and 4
+4.What is shadow root.
+5.absolute xpath, relative xapth, / and // diff in xpath
+6.Automation tools.
+
+=========================
+api testing
+1. methods in api, get,put, post, patch, delete
+2. how we will send data-by using put and post methods
+3. what is https-https has params
+4. token id--every time get token id for window, static and dynamic token id we can put
+
+==============
+
+
+====================
+@technogen
+1. Difference between epic and story
+Epic:
+An epic is a large body of work that can be broken down into smaller tasks or user stories.(multiple related features or functionalities.)
+They are often too large to be completed in a single iteration or sprint and may span multiple sprints or even the entire project timeline.
+
+Story (User Story):
+A story, or user story, is a small, self-contained unit of work that represents a specific feature or functionality from the perspective of an end user.
+Stories are usually written in a simple, non-technical language that describes what the user wants and why they want it.
+They are typically small enough to be completed within a single iteration or sprint, usually ranging from a few hours to a few days of work.
+Stories are used to define the detailed requirements of the system and provide a basis for development and testing.
+
+2. Difference between agile and waterfall model
+
+
+3. bug life cycle
+
+5. regression and retesting diff
+6. emulator and simulator
+7. gettext method return type
+In Java, the getText() method typically returns a String type.
+
+8. implicit and explicit wait
+9. Windows handling in selenium
+10. Staleelement reference exception
+11. hooks class in cucumber
+
+
+12. Assertions in java
+13. explain try and catch blocks
+
+14. how to switch from current branch to prviously pushed gerrit branch
+
+
+==================
+
+=========================
+
+1. CAN 
+2. cypress
+3. API
+========================
+@@harman,susmitha
+
+1. scroll syntax, up down how to get disply size, how to get dimentions
+2. count of vowels
+3. 3 prerequisites to connect mobile device to system
+4. 
+
+==========================
+prepare jd
+prepare technical stuff
+amol
+retry analyser
+==========================
+selenium cucumber:
+https://www.linkedin.com/pulse/test-automation-using-bdd-approach-cucumber-munif-khan/?trackingId=ELVkxcCHTl2UtELNbJoW9Q%3D%3D
+
+========================================
+@teja@
+
+1. In mobile launch application, login, then automate otp
+Automating mobile application tests, including scenarios like launching an application, logging in, 
+and handling OTP (One Time Password), can be efficiently accomplished using tools like Appium. Appium is an open-source tool for automating native, 
+mobile web, and hybrid applications on iOS and Android platforms. Here's a general approach to automating such a flow:
+
+1. Set Up Environment
+Ensure you have Appium server installed and running. You also need the Appium client library added to your project, 
+which can be done via dependency management tools like Maven or Gradle if you're using Java.
+
+2. Launch the Application
+First, you need to launch the application using Appium. This involves setting up desired capabilities to 
+specify the environment your test script will run in, such as device type, platform version, app package, and activity name.
+
+
+// Initialize driver
+AppiumDriver<MobileElement> driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), caps);
+3. Login Automation
+To automate the login process, use the Appium driver to locate the login input fields (usually by ID, XPath, or other selectors), 
+fill in the credentials, and submit the form.
+
+java
+Copy code
+driver.findElement(By.id("com.example:id/username")).sendKeys("your_username");
+driver.findElement(By.id("com.example:id/password")).sendKeys("your_password");
+driver.findElement(By.id("com.example:id/login")).click();
+4. Automate OTP
+Automating OTP verification can be challenging due to its dynamic nature and security implications. However, there are a few approaches:
+
+Using a Static OTP: If you have control over the backend, configure it to send a static OTP for certain test accounts.
+OTP Bypass: Implement a bypass mechanism in the backend for test environments that skips OTP verification or validates against a pre-defined OTP.
+Read OTP from SMS: If none of the above is feasible, you can automate reading the OTP from an SMS. This requires additional permissions to read SMS and 
+might involve more complex steps. Appium provides ways to interact with notifications and read SMS, but this approach is less reliable and recommended only if absolutely necessary.
+java
+Copy code
+// Example approach, assuming you have a way to access the OTP directly or through an SMS
+String otp = "123456"; // This should be dynamically obtained based on your test setup
+driver.findElement(By.id("com.example:id/otp")).sendKeys(otp);
+5. Finalizing
+After performing the desired tests, always ensure to properly close the Appium driver session to free up resources.
+
+java
+Copy code
+driver.quit();
+Note
+Automating OTP can introduce security risks and should be handled carefully, ensuring that testing does not compromise the security 
+of the application. Always prefer server-side solutions like OTP bypass mechanisms for automated testing environments.
+
+2. locators changing dynamically, how to automate them
+3. 
+
+=============================
+@cigniti
+1. if we declare chromedriver driver=new chromedriver() in one java class how to use driver in other different 100 classes
+
+
+==================
+@capgemini
+1. exception handling thow, thows
+throw is used to explicitly throw an exception from within a method or a block of code.
+When you throw an exception, you are essentially signaling that something exceptional has occurred and the normal flow of the program cannot continue.
+It is followed by an instance of an exception class or a subclass thereof.
+Syntax: throw new ExceptionType();
+
+public void someMethod() {
+    if (someCondition) {
+        throw new SomeException(); // Throws an instance of SomeException
+    }
+}
+
+throws:
+throws is used in the method signature to declare the exceptions that a method might throw.
+It is used to specify the exceptions that the method might not handle itself, but rather pass on to its caller.
+It does not handle the exception itself but simply declares that the method might produce such an exception.
+Syntax: void methodName() throws ExceptionType1, ExceptionType2, ...;
+
+public void someMethod() throws IOException, SQLException {
+    // Method code that might throw IOException or SQLException
+}
+
+3. checked uncheked exceptions
+Checked Exceptions
+Definition: Checked exceptions are exceptions that are checked at compile-time. This means that the compiler requires the code to either 
+handle these exceptions with a try-catch block or declare them in the method signature using the throws keyword.
+When to Use: You use checked exceptions for conditions from which the caller can reasonably be expected to recover. They are often used to 
+signal that an error occurred due to external circumstances, like file not found errors, network connection errors, etc.
+Examples: IOException, SQLException, etc.
+
+try {
+    // code that may throw a checked exception
+} catch (IOException e) {
+    // handling the exception
+}
+
+Or declaring it with the throws keyword in the method signature:
+
+java
+Copy code
+public void myMethod() throws IOException {
+    // code that may throw IOException
+}
+
+Unchecked Exceptions
+Definition: Unchecked exceptions include runtime exceptions and errors. They are not checked at compile-time,
+which means the compiler does not require methods to catch or to declare them. Unchecked exceptions inherit from RuntimeException and Error.
+When to Use: Unchecked exceptions usually indicate programming bugs, such as logic errors or improper use of an API. 
+Runtime exceptions are intended to be thrown by the Java Virtual Machine (JVM) or the Java API methods.
+Examples: NullPointerException, ArrayIndexOutOfBoundsException, ArithmeticException, etc
+
+public void myMethod() {
+    int result = 10 / 0; // This will throw ArithmeticException (unchecked)
+}
+
+Checked Exceptions: Must be either caught or declared in the method's throws clause. They are meant to represent recoverable conditions.
+Unchecked Exceptions: Include runtime exceptions and errors. They do not need to be declared or caught, and they usually indicate programming errors.
+
+
+
+=======================
+
+1. appium versions, diff btw versions 1 2
+2. selenium version
+3. difference between appium driver and android driver
+
+Key differences between Appium 1.x and 2.x include:
+
+Architecture: Appium 1.x is based on the original architecture with a standalone server, while Appium 2.x introduces the AFM server for iOS/macOS automation.
+Automation approach: Appium 1.x primarily relies on WebDriver protocol, whereas Appium 2.x integrates native XCTest-based automation for iOS/macOS.
+Platform support: Appium 1.x is more established for both Android and iOS, while Appium 2.x enhances the automation experience especially for iOS/macOS.
+Performance and reliability: Appium 2.x, particularly for iOS/macOS automation, is expected to offer better performance and reliability due to the native XCTest integration.
+
+================================================
+
+diff btw selenium 3,4
+appium type casting
+
+encapsulation and abstraction
+
+==========================================
+type casting in appium
+if you're automating Android apps, you'd typically use AndroidDriver for its Android-specific capabilities. 
+If you're working on a cross-platform project or need platform independence, you'd use AppiumDriver.
+
+In Appium, type casting is often necessary when working with different types of drivers, 
+such as AndroidDriver or IOSDriver, within the same test script. This is because, in Java (which is commonly used with Appium), 
+you may want to switch between different driver types or access specific methods or properties that are unique to a particular driver type
+ 
+ 
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.ios.IOSDriver;
+import io.appium.java_client.MobileElement;
+import org.openqa.selenium.WebDriver;
+ 
+public class AppiumTypeCastingExample {
+ 
+    public static void main(String[] args) {
+        // Instantiate a WebDriver (generic) object
+        WebDriver driver = new AndroidDriver(); // Creating an instance of AndroidDriver
+        // Type casting WebDriver to AndroidDriver
+        AndroidDriver<MobileElement> androidDriver = (AndroidDriver<MobileElement>) driver;
+        // Now you can use methods specific to AndroidDriver
+        androidDriver.startActivity("com.example.app", "MainActivity");
+        // Similarly, you can type cast to IOSDriver if needed
+        // IOSDriver<MobileElement> iosDriver = (IOSDriver<MobileElement>) driver;
+    }
+}
+
+ like 1
+
+==========================================================================
+
+Encapsulation 
+we can give example in our project.
+we are using execution Class GmMainTestDriver.java form there we will execute the entire suit.
+
+==========================================================================
+
+explain public static void main in java
+
+In Java, System.out.println() is a statement used to print output to the console. Let's break down each part of it:
+
+System: This refers to the System class in Java's standard library. It provides access to system resources such as standard input, standard output, and error output streams.
+
+out: out is a static member of the System class, which represents the standard output stream. This stream is typically connected to the console or terminal where you run your Java program.
+
+println(): This is a method belonging to the PrintStream class, which is the type of out. It is used to print a line of text to the output stream. println stands for "print line," which means it prints the text followed by a newline character (\n), which moves the cursor to the beginning of the next line after printing.
+
+So, when you call System.out.println("Hello, world!");, you are instructing Java to print the text "Hello, world!" to the console, followed by a newline character, effectively moving the cursor to the next line.
+
+
+User
+explain public static void main in java
+ChatGPT
+In Java, public static void main(String[] args) is the entry point of a Java program. Let's break down each part of this 
+method signature:
+
+public: This is an access modifier in Java that specifies the visibility of the method. public means that 
+the main method can be accessed from any other class. It is essential for the JVM (Java Virtual Machine) to 
+locate and execute the main method.
+
+static: This is a keyword in Java used to declare that the main method belongs to the class itself rather 
+than to instances of the class. This means that you can call the main method without creating an instance of the class.
+
+void: This is the return type of the main method. void indicates that the method does not return any value. 
+The main method is meant to execute the program rather than returning any specific result.
+
+main: This is the name of the method. It's a convention in Java that the entry point of a program should be named main. 
+This is the method that the JVM looks for when starting the execution of a Java program.
+
+(String[] args): This is the parameter list of the main method. It specifies that the main method accepts an array of 
+strings as arguments. These arguments can be provided when the program is run from the command line. The name args is 
+just a conventional name; you can use any valid Java identifier here.
+
+So, when you define a main method with this signature in a Java class, it serves as the starting point of your program. 
+The JVM looks for this method and executes its code when you run your Java program.
+
+============================================================================================
+
+In Java, System.out.println() is a statement used to print output to the console. 
+Let's break down each part of it:
+
+System: This refers to the System class in Java's standard library. It provides access to system resources such as 
+standard input, standard output, and error output streams.
+
+out: out is a static member of the System class, which represents the standard output stream. This stream is typically 
+connected to the console or terminal where you run your Java program.
+
+println(): This is a method belonging to the PrintStream class, which is the type of out. It is used to print a line of 
+text to the output stream. println stands for "print line," which means it prints the text followed by a newline character 
+(\n), which moves the cursor to the beginning of the next line after printing.
+
+
+==============================================================================================
+
+@pwc
+1. difference between selenium 3 and 4
+2. xpaths
+3. 
+
+========================================================================================
+
+What is difference between list and tuple?
+
+Q: Significance of break and continue
+
+Q: What is ‘finally’ keyword in python?
+
+Q: How do you assign a multiline string to a variable?
+In Python, you can assign a multiline string to a variable by using triple quotes. You can use either triple single quotes (''') or triple double quotes (""") 
+to start and end the multiline string. This allows the string to span multiple lines, preserving line breaks, spaces, and any other formatting within the quotes.
+
+Q: What is ‘pass’ in python?
+
+Q: What are locators in Selenium, and what are the commonly used locators?
+
+Q: What are the different types of waits in Selenium, and why are they important?
+
+Q: What is the difference between findElement() and findElements() methods in
+
+=============================
+f = None
+for i in range (5):
+    with open("data.txt", "w") as f:
+        if i > 2:
+            break
+print(f.closed)
+
+
+========================================
+@landt
+1. reverse of string
+2. output of below python code
+f = None
+for i in range (5):
+    with open("data.txt", "w") as f:
+        if i > 2:
+            break
+print(f.closed)
+3. diff btw tuple and list
+Tuple:
+A tuple is an ordered collection of elements, which can be of mixed data types.
+Tuples are immutable, meaning once they are created, their elements cannot be changed, added, or removed.
+Tuples are represented by parentheses ( )
+my_tuple = (1, 2, 'a', 'b')
+
+List:
+A list is also an ordered collection of elements, which can be of mixed data types.
+Lists are mutable, meaning you can change, add, or remove elements after the list is created.
+Lists are represented by square brackets [ ].
+my_list = [1, 2, 'a', 'b']
+
+4. emulator and simulator diff
+5. selenium locators
+6. explain about your project
+
+
+be little confident
+QA defect
+what is ui automation tool--appium, selenium
+
+programs:
+
+int a[]={0,12,0,0,28,9,5,0}
+
+output-->{12,0,28,0,9,0,5,0}
+
+step1: 12,28,9,5,
+========================================
+
+int a[]={0,12,0,0,28,9,5,0}
+
+list<integer> obj=new Arraylist<Integer>();
+for(int i=0; i<a.length;i++){
+if(a[i]!=0){
+obj.add(a[i])
+}
+}
+for(int i=0;i<a.lenght;i++)
+{
+if(a[i]==0){
+obj.add(a[i])
+}
+}
+System.out.println(obj)----->12,28,9,5,0,0,0,0
+                              0  1 2 3
+list<integer> obj1=new Arraylist<Interger>();
+for(int i=0;i<obj.length;i++)
+{
+if(a[i]!=0){
+if(i==0||i==1||i==2){
+obj1.add(0)
+}
+}
+
+}
+==================================================
+
+Label	Value
+L1		ABC
+L2		XYZ
+L3		PQR
+L4		LMN
+
+//tagname[@attrbute=value]::/following-sibling[tagname]
+
+====================================
+
+suggestion:
+API automation rest assured library
+
+UI automation - react JS
+
+limitations: otp, barcodes, 
+
+playwrite(supporting API), cypress(supporting API), webdriver io integrated with cypress
+
+
+
+Appium limitations or disadvantages of appium
+
+===================================================
+
+1. library to get excel access--import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+2. sort the hahmap elements - input-{(3,devi)(1,satya), (2,rayudu)} --output->{(1,satya),(2,rayudu),(3,devi)}
+
+=========================================================================
+
+fibonocci series
+0
+1
+1
+2
+3
+
+int a=0,b=1,c;
+Systemout.println(a+""+b)
+for(int i=0;i<=5;i++)
+{
+c=a+b;
+a=b;
+b=c;
+System.out.println(c);
+}
+
+textfile
+
+have log markers
+
+fps:50, 40,30
+
+abc=read("file location")
+for(int i in abc):
+	if(i==fps)
+		print(i)
+
+
+
+
+

@@ -1,0 +1,388 @@
+carrier Interview Questions:
+Brief about yourself?
+What is your framework structure?
+What is the difference between absolute xpath and relative xpath?
+// and /html/body/tags difference?
+Open one site and write the xpath for it? //tagname[text()='']';
+find duplicate values in an Array?
+ 
+ 
+Caprus Interview Questions
+ Self Introduction
+ Project Structure
+Explain about your automation tools
+Explain about your projects
+Create a keyword that two arguments are dynamic and 1argument is static? can you please write in robotframework?
+Write a program for launch browser with flipkart, click on the flipkart text, click on the mobiles text, click on the motrola mobile and capture screenshot.
+ 
+Cigniti Interview Questions:
+ 
+Self Introduction
+what is interface and abstract method with difference?
+What is concrete Class?
+What is implements keyword where we will use exactly?
+what is difference between extends and interface?
+What are access modifiers?
+what is constructor where we will use exactly?
+Did Java has Constructor overloading?
+What is static keyword where we will use exactly?
+What is Overriding concept in Java?
+What is inheritance?
+What are the challanges faced in your slenium project?
+Write an xpath for amazon element?
+What is stale element exception
+write a java program for reverse a words only in a sentence?
+what is Selenium Webdriver?
+What is Appium Server?
+What is robotframework?
+What is your project?
+ 
+Which methodology you have used in your company?
+ 
+What is the difference between Git and Github?
+ 
+Can you say about Agile Methodology?
+ 
+what is Severity and Priority with real time examples?
+ 
+what is Retesting and Regression Testing?
+ 
+when you will use Regression Testing with Real time Example?
+ 
+what are the Non-Functional Testing?
+ 
+what are the Functional Testing?
+ 
+Can you say example for High Priority and Low Severity?
+ 
+What is the difference between Black Box testing and white Box testing?
+ 
+what is the Sprint Ceremony?
+ 
+what are the tools you have used in your project?
+ 
+Explain about Zira Tool?
+ 
+Is your project agile?
+ 
+What is the sprint cycle for your project?
+ 
+Is 2weeks or 3weeks sprint?
+ 
+what are the calls in agile?
+ 
+what is the difference between water model and agile model?
+ 
+Do you know Scrum velocity in agile?
+ 
+Burndown and Burnup chat are you aware of that?
+ 
+For the Test management tool what is the tool you are using?
+ 
+what are the Difference between epic stories and tasks?
+ 
+what is the difference between sanity and smoke?
+ 
+can you explain testing life cycle?
+ 
+explain about git?
+ 
+what is integration testing
+ 
+Who will do End to End testing.
+ 
+what is system testing
+ 
+what is acceptance testing
+ 
+Test closure activities & Test closure Report
+ 
+what are the business scenarios in you project
+ 
+what is SDLC &STLC
+ 
+what is system testing
+ 
+what is end to end testing
+ 
+Flow of tastings in your project
+ 
+What are the static testing and dynamic testing
+ 
+WHAT IS JEKINS
+ 
+DO YOU SCHUDLE ANY JOB BY USING JENKINS
+ 
+WHAT IS GIT
+ 
+Tell me about yourself?
+ 
+What is smoke and sanity testing?
+ 
+What is APITesting and http methods and http status codes?
+ 
+what database testing workflow?
+ 
+what is select statement in sql?
+ 
+what is update syntax in sql?
+ 
+what is scrum process?
+ 
+How many testcases did you write till now?
+ 
+what is bug life cycle?
+ 
+How raise defect in jira?
+ 
+Where do you write testcases?
+ 
+Write test cases for pen?
+ 
+Write testcases for login functionality?
+ 
+How you generate token?
+ 
+Do you have idea on CI/CD?
+ 
+What are the challenges you faced in your project?
+ 
+Explain your recent project?
+ 
+ 
+ 
+In this riddle, you are presented with the farmer's problem of transporting his animals and crops across a river. Here is the question:
+ 
+A farmer needs to cross the river with his fox, his chicken and a bag of corn. However, the boat can only fit the farmer and one other thing at a time. The problem is, the fox and the chicken are both hungry, so if he leaves the fox and chicken together, the fox might eat the chicken. If he leaves the chicken and corn together, the chicken might eat the corn.
+ 
+So how can the farmer get everyone across the river safely?
+ 
+ 
+ 
+Ans:First, the farmer should take the chicken across.
+ 
+Then, he can go back for the fox. When he arrives at the other side to drop off the fox, he can take the chicken back with him to get the corn.
+ 
+The farmer drops off the chicken and transports the corn to the other side of the river.
+ 
+Finally, the farmer goes back for the chicken and continues to the other side of the river with nothing eaten.
+ 
+ 
+ 
+what kind of testings you did?
+ 
+Do you involve in test strategy and test plan?
+ 
+When bug is not reproduceble what will be your approach?
+ 
+After getting userstories what will be your next steps?
+ 
+On which environment you did testing?
+ 
+Did you do testing in production environment?
+Introduction 
+ 
+Educational Details 
+ 
+Explain About Project 
+ 
+String Reverse Program 
+ 
+How to create a array using Integer 
+ 
+How to launch the browser 
+ 
+What is String? 
+ 
+Different between findElement and FindElements 
+ 
+What are the locators? 
+ 
+Window Handles and return type 
+ 
+DropsDowns 
+ 
+Datatypes 
+ 
+What you will do for webdriver to chromedriver 
+ 
+Which is the fastest locator and explain about css Selector 
+ 
+Difference between testng.xml and pom.xml 
+ 
+Alerts 
+ 
+How to find the links? 
+ 
+Structure of PageObjectModel 
+ 
+OOPs Concept 
+ 
+Methods and variables 
+ 
+Abstract and Interface 
+ 
+Access Modifiers 
+ 
+ 
+ 
+ 
+Java Programs
+ 
+ 
+ 
+1. Write a program to find Array maximum number?
+2. Write a program to find Array minimum number?
+3. Write a program to find second maximum number?
+4. Write a program to find sum of an Array?
+5. Write a program to find duplicate characters in an Array?
+6. Find length of string with out using length method?
+7. Write a program to reverse a string?
+8. Write a program to find duplicate characters and count in String?
+9. Write a Palindrom program?
+10. Write a fibonacci series program?
+11. Swap two numbers with out using third variable?
+12. Write a program String reverse by using Hashmap?
+13. Write a program for Prime number?
+14. Write a program for even or odd?
+15. Write a program for method overloading with example?
+16. Write a program for method overriding with example?
+17. Write a program using interface?
+Persistent Interview Questions:
+1) Introduction with roles and responsibilities with Educational Details?
+2) Are you using java?
+3) Explain about Project?
+4) Till now how many test cases you wrote?
+5) On which module you have worked in your recent project?
+6) what is the version of java and Selenium?
+7) what are the features added in Java 1.8 compare to previous version?
+8) Can you explain brief about the Project Structure?
+9) What are the dependencies you add in pom.xml?
+10) Explain about pom.xml?
+11) How you will run the testNG.xml?
+12) Phases of Maven?
+13) Structure of testNG.xml?
+14) What is the thread-count?
+15) If you want to go with different browsers what you will use?
+16) How you will execute Cross Browsing Testing?
+17) how you will get the data from data driven framework?
+18) can you write program for reverse String?
+19) How you will execute the code without using the Eclipse IDE?
+20) When you will get the .class file?
+21) How you have to save the java program can you show me without using eclipse?
+22) What is the Object?
+23) Can you explain me the String?
+24) When you will get the IndexOutOfBoundException?
+25) can you show me the non- static Variable? How you will write?
+26) Can you show me the Static Variable? How you will write?
+27) How you will call the non-static variable?
+What is the difference between getWindowHandle and getWindowHandles?
+29) What is the difference between list and set?
+30) can you create a list?
+31) There is a dropdown and I want to select a value? Can you show me how you will write for the
+dropDown?
+32) I’m in a home page and I have to click a button. Then you will get the pop up and after clicking
+popup you will navigate to another webpage. In that webpage there is a text I want that text and I have
+to validate with Welcome?
+33) what is the difference between equal and equals?
+34) Do you know API Testing?
+35) What is the difference between get and post?
+36) Have you know about the PageFactory? What is the purpose of PageFactory?
+37) When we have to use extends keyword and when we have to use implements?
+38) What is the difference between interface and abstract?
+39) can we implement multiple Interfaces?
+40) public static String methodName(){
+}
+What is missing in the above program?
+Maveric Interview Questions:
+1) Introduce yourself and about project?
+2) Do you have knowledge on Git, maven and Jenkins?
+3) Difference between Assert and Verify?
+4) What is X-path?
+5) Do you know the difference between absolute x-path and relative x-path?
+6) How do you launch a webdriver?
+7) Have you ever handle windows?
+8) How do you handle window based popups?
+9) what are the waits in selenium?
+10) How do you take screenshot?
+11) Do you know the difference between driver.close() and driver.Quit()?
+12) Have you ever launch the Headless Chrome Browser?
+13) How do you handle mouse Over Actions?
+14) Which reporting tool you have used in your framework?
+15) Have you ever used extent report?
+16) What is Inheritance?
+17) Program compare two Strings?
+18) what is method and class?
+19) what is constructor overloading?
+20) what is difference between final and finally?
+21) Have you work with POM?
+22) can you briefly explain POM?
+23) You are using git in your Project?
+24) How do you pull the code from base package?
+25) Have you work with Jenkins?
+26) How do you schedule jobs in Jenkins?
+COGNIZANT INTERVIEW QUESTIONS (07/06/2021)
+1.Brief Introduction?
+2. What is QA and QC?
+3. Traffic signal Testcases?
+4. What is Regression Testing?
+5. What is Regression Testing and Retesting?
+6. Have you ever done Walkthrough?
+7. How many types of Integration Testing?
+8. What is Verification and Validation?
+9. What is Test Strategy?
+10. What is Test Plan?
+11. Difference between Test Scenario and Test cases?
+12. How to prepare RTM?
+13. Smoke Testing and Sanity Testing?
+14. How would you know all the scenarios are completed in Testing?
+15. High Priority and Low Serveority?
+16. Entry Criteria and Exit Criteria?
+17. You raised 4bugs and Developer rejected the all the 4bugs? Why Developer Rejected the Bugs?
+18. What are Stubs and Drivers? Where we use?
+19. In a super Mario Game 3levels? 1st and 2nd level are already developed? You have to Test 3
+rd Level?
+How we will test the 3rd level?
+20. Defect Life Cycle?
+21.who will say this bug can fix in next sprint?
+22. Agile Methodology?
+23. What is State Transition?
+24. Defect Leakage?
+• Defect leakage ratio: (No. of defect missed/total defects of software) X 100
+25. Defect Reject Ratio?
+• Defect rejection ratio: (No. of defects rejected/ total no. of defects raised) X 100
+•
+26. High Defect Reject Ratio?
+27. Have you given estimation in your Project?
+28. What information has Test Report Contain?
+29. Do you know SRS/FRS?
+30. Test Coverage and Code coverage?
+31. System Testing and Integration Testing?
+32. Testing Principles?
+33. Testing Principles?
+34. Why do we do Early Testing?
+35. What is BVA?
+36. What exactly you involve in your Project?
+37. What is Static Testing and Dynamic Testing?
+Which methodology you have used in your company?
+What is the difference between Git and GitHub?
+Can you say about Agile Methodology?
+what is Severity and Priority with real time examples?
+what is Retesting and Regression Testing?
+when you will use Regression Testing with Real time Example?
+what is the Non-Functional Testing?
+what is the Functional Testing?
+Can you say example for High Priority and Low Severity?
+What is the difference between Black Box testing and white Box testing?
+what is the Sprint Ceremony?
+what are the tools you have used in your project?
+Explain about Zira Tool?
+Is your project agile?
+What is the sprint cycle for your project?
+Is 2weeks or 3weeks sprint?
+what are the calls in agile?
+what is the difference between water model and agile model?
+Do you know Scrum velocity in agile?
+Burndown and Burnup chat are you aware of that?
+For the Test management tool w
+ 

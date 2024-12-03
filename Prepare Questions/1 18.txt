@@ -1,0 +1,453 @@
+1. Armstrong: n=153, s=0, temp=n
+While(n>0)
+{
+r=n%10
+s=s+r*r*r
+n=n/10
+}
+=====================================
+2. Palindrome or reverse of number: n=121, s=0, temp=n
+while(n>0)
+{
+r=n%10;
+s=s*10+r;
+n=n/10;
+}
+======================================
+3. Swapping of 2 no's without 3rd variable:
+a=3, b=5
+a=a+b
+b=a-b
+a=a-b
+==========================================
+4. Swapping of 2 no's with 3rd variable:
+a=3, b=5, c
+c=a;
+a=b;
+b=c;
+========================================
+5. Factorial: 3!=6, fact=1
+for(i=1;i<=3;i++)
+{
+fact=fact*i;
+}
+=============================
+6. multiplication of table
+int n=10 10*1=10
+for(int i=1;i<=10;i++)
+{
+sysout("10*"+i+"="+(10*i))
+}
+=================================
+7. Fibinacci series:
+a=0, b=1, c
+print(a,b)
+for(int i=1;i<=10;i++)
+{
+c=a+b;
+a=b;
+b=c;
+}
+=====================================
+8. prime number:
+
+while(i<=n)
+{
+if(n%i==0)
+{
+c++
+}
+i++
+}
+if(c==2)
+{
+sysout(prime)
+}
+else
+sysout(not prime)
+===============================
+9. Swapping of 2 strings without 3rd variable
+
+String a=satya, b=uma
+a=a+b
+b=a.substring(0, a.length()-b.length())
+a=a.substring(b.length())
+print a,b
+===============================
+10. remove numeric values from string:
+
+string str="house123rent4"
+str=str.replaceAll("[0-9]","")
+print(str)
+===============================
+print only special characters
+
+String s1="harish$%!!1232 siva";
+String s2=s1.replaceAll("[^a-zA-Z0-9]", "");
+System.out.println(s2);
+===========================
+
+11. remove vowels from string:
+
+String str="satya"
+str=str.replaceAll("[aeiouAEIOU]","")
+print(str)
+===============================
+12. print duplicate characters of string:
+
+String str="mirror"
+Char[] ch=str.toCharArray();
+for(i=0;i<str.length();i++)
+{
+for(j=i+1;j<str.length();j++)
+{
+if(ch[i]==ch[j])
+print(ch[j])
+}
+}
+================================
+13. remove duplicate character from string and print remaining 
+
+String s1="mirror"
+String s2=""
+for(int i=0;i<s1.length()-1;i++)
+{
+if(s2.indexof(s1.charAt(i))==-1)
+{
+s2=s2+s1.charAt(i)
+}
+}
+==================================
+14. Reverse of string: 
+
+String str1="Satya"
+String str2=""
+for(i=str1.length()-1;i>=0;i--)
+{
+str2=str2+str1.charAt(i)
+}
+sysout(str2)
+output: aytaS
+
+method:2
+String s1="satya devi";
+char ch[]=s1.toCharArray();
+for (int i = s1.length()-1; i >= 0; i--) 
+{
+System.out.print(ch[i]);
+}
+output: ived aytas
+		
+==================================
+15. Reverse of the words in sentence
+
+String s1="moon and stars"
+String s2="";
+String s3[]=s1.split(" ");
+for(i=0;i<=s3.length-1;i++)
+{
+s2=s3[i]+" "+s2;
+}
+print s2
+
+==================================
+
+16. find a duplicate word from sentenance
+
+String s1="ak is pak so pak is ak";
+String[] s3=s1.split(" ");
+for (int i = 0; i < s3.length; i++) {
+for (int j = i+1; j < s3.length; j++) {
+  if (s3[i].equals(s3[j])) {
+  System.out.println("duplicate words are: "+s3[j]);
+		}
+	}
+output: ak pak
+
+==================================
+17. 2nd largest number in given array, or acending order or, largest number in array
+ array a=1,5,6,4 output-->print ascending order, descending order
+13. sorting in java
+
+int[] a= {1,2,5,6,3,2};
+int temp;
+for (int i = 0; i < a.length; i++) {
+for (int j = i+1; j < a.length; j++) {
+if (a[i]>a[j]) {
+temp=a[i];
+a[i]=a[j];
+a[j]=temp;
+}
+}
+}
+System.out.println("2nd larget is "+a[a.length-2]);  a[4]
+System.out.println(Arrays.toString(a));  //1,2,2,3,5,6
+====================================
+18. get digits from string and then add
+string s1="sa1t2ya3"
+output 1+2+3=6
+
+String s1 = "sa1t2ya3";
+int sum=0;
+for (int i = 0; i <s1.length(); i++) {
+char c=s1.charAt(i);
+if (Character.isDigit(c)) {
+sum = sum+Character.getNumericValue(c);
+				
+}
+}
+System.out.println("sum of characters in string "+sum);
+
+==========================================
+19. program to seperate characters in string
+
+StringBuilder in Java is a class used to create a mutable, or in other words, a modifiable succession of characters - to store elements dynamically
+public class SeparateCharacters {
+    public static void main(String[] args) {
+        String s1 = "satya123*&^";
+
+        // Initialize strings to store separated characters
+        StringBuilder letters = new StringBuilder();
+        StringBuilder numbers = new StringBuilder();
+        StringBuilder specialChars = new StringBuilder();
+
+        // Iterate through each character in the string
+        for (int i = 0; i < s1.length(); i++) {
+            char ch = s1.charAt(i);
+
+            // Check if the character is a letter
+            if (Character.isLetter(ch)) {
+                letters.append(ch);
+            }
+            // Check if the character is a digit
+            else if (Character.isDigit(ch)) {
+                numbers.append(ch);
+            }
+            // All other characters are considered special characters
+            else {
+                specialChars.append(ch);
+            }
+        }
+
+        // Print the separated characters
+        System.out.println("Letters: " + letters.toString());
+        System.out.println("Numbers: " + numbers.toString());
+        System.out.println("Special Characters: " + specialChars.toString());
+    }
+}
+
+===============================================
+20. character occurances in java - {a=2, s=1, t=1, y=1}
+
+String s1="satya";
+//for storing characters and character count
+Map<Character, Integer> charcount=new HashMap<Character, Integer>();
+for(Character ch:s1.toCharArray()) {
+	if (charcount.containsKey(ch)) {
+		charcount.put(ch, charcount.get(ch)+1);
+		
+	} else {
+		charcount.put(ch, 1);
+
+	}
+}
+System.out.println(charcount);
+
+============================================
+21. //Remove all occurrences of an Element
+//Input: nums = [3,2,2,3], val = 3
+//Output: nums = [2,2]
+
+int[] nums = {3, 2, 2, 3};
+        int val = 3;
+
+        List<Integer> list=new ArrayList<Integer>();
+      
+        for (int num : nums) {
+            if (num != val) {
+                list.add(num);
+            }
+        }
+
+        System.out.println(list);
+==============================================
+
+22. program to get ovels in string then count the number
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//program to get ovels in string then count the number
+
+		System.out.println("enter the string ");
+		Scanner sc=new Scanner(System.in);
+		String abc=sc.next().toLowerCase();
+int count=0;
+char ch[]=abc.toCharArray();
+for (int i = 0; i < ch.length; i++) {
+	if (ch[i]=='a'||ch[i]=='e'||ch[i]=='i'||ch[i]=='o'||ch[i]=='u') {
+		count=count+1;
+
+		System.out.print(ch[i]);
+	}
+}
+System.out.println(" ");
+System.out.println(count);
+sc.close();
+	}
+====================================================================
+
+23. program to add numbers in list
+int a[]= {1,2,3,4};
+		int sum=0;
+		for (int i : a) {
+			sum=sum+i;
+		}
+System.out.println(sum);
+
+
+=======================================================================
+
+24. anagrams
+String s1="cat", s2="act";
+		String str1=s1.replaceAll("\\s", "");
+		String str2=s2.replaceAll("\\s", "");
+		if(str1.length()!=str2.length()) {
+			System.out.println("not anagrams");
+		}
+		else {
+			char[] c1=str1.toLowerCase().toCharArray();
+			char[] c2=str2.toLowerCase().toCharArray();
+		Arrays.sort(c1);
+		Arrays.sort(c2);
+		Arrays.equals(c1, c2);
+		System.out.println("2 strings anagrams");
+		}
+
+=========================================
+25. Input: Apple and Orange are brothers
+Output 1 : elppA dna egnarO era srehtorb
+Output 2 : lpp dn gnr srhtrb
+
+elppA dna egnarO era srehtorb 
+ lpp dn  gn r  r sr ht rb
+
+String s1="Apple and Orange two brothers";
+		String[] s2=s1.split(" ");
+		StringBuilder obj=new StringBuilder();
+		for(int i=0;i< s2.length;i++) {
+
+			char s3[]=s2[i].toCharArray();
+
+
+			for (int j = s3.length-1; j >=0; j--) {
+				System.out.print(s3[j]);
+				obj.append(s3[j]);
+				
+			}
+			System.out.print(" ");
+			
+		}
+		
+		System.out.println();
+		
+		String obj1=obj.toString().replaceAll("[aeiouAEIOU]", " ");
+		System.out.println(obj1);
+
+====================================================
+26. print 1 to 10 numbers and skip 3 and 5 in between 1 to 10 (continue we can use)
+for (int i = 1; i <=10; i++) {
+
+	if(i==3||i==5) {
+		System.out.println("skipped number");
+		continue;
+	}
+	System.out.println(i);
+}
+
+=========================================================
+27. Error code since i start with float value and declared as int 
+
+class Demo {
+    public static void main(String args[]) {
+      for (int i =0.0; i <3.0; i++) {
+        switch(i) {
+        case 0: break;
+        case 1: System.out.print("one ");
+        case 2: System.out.print("two ");
+        case 3: System.out.print("three ");
+        }
+        }
+        System.out.println("done");
+        }
+}
+
+=======================================================================
+
+28. pattern program 
+*
+**
+***
+for(i=0;i<=5;i++)
+{
+for(j=0;j<+i;j++)
+{
+System.out.print("*")
+}
+System.out.println()
+}
+
+==========================
+29.  //Remove all occurrences of an Element
+//Input: nums = [0,0,1,2,4,0,4], val = 0
+//Output: nums = [0,0,0,0,1,2,4,4]
+=============================================
+
+programs in java
+
+1. array list [0,0,1,5,0,4] output--> [0,0,0,1,5,4]
+2. print 10 prime numbers, prime number program
+3. java programs(string character occurances)
+4. reverse string(read string from keyboard)
+5. string program count number of characters in string input: satya, s-1,a-2,t-1
+6. programe for 
+Remove all occurrences of an Element
+//		Input: nums = [3,2,2,3], val = 3
+//		Output: nums = [2,2]
+7.
+
+==================================================
+
+how to count no of intergers and characters in a give nstring
+
+10. program - oder of n complexity - we have sorted array a=[0,0,0,1,1,1] -get output as [1,1,1,0,0,0] with order of n complexity
+
+
+11. java programs to arrary a[]={0,0,1,2,3} output {1,2,3,0,0}
+
+
+12. remove duplicates in string, remove digits in string using regular expression
+
+
+===================================================
+
+Given an array of integers numbers and an integer target,
+return indexes of the two numbers such that they add up to target.
+Input: nums = [2,7,11,15], target = 13
+Output: [0,2]
+=======================================
+
+8. Array Sorting: Implement sorting algorithms like bubble sort, merge sort, or quicksort.
+9. Binary Search: Implement a binary search algorithm to find an element in a sorted array.
+10. Duplicate Elements in an Array: Find and print duplicate elements in an array.
+11. Linked List Reversal:
+Reverse a singly-linked list.
+12. Matrix Operations: Perform matrix operations like addition, multiplication, or transpose.
+13. Implement a Stack: Create a stack data structure and implement basic operations (push, pop).
+14. Implement a Queue: Create a queue data structure and implement basic operations (enqueue, dequeue).
+15. Inheritance and Polymorphism: Implement a class hierarchy with inheritance and demonstrate polymorphism.
+16. Exception Handling: Write code that demonstrates the use of try-catch blocks to handle exceptions.
+17. File I/O: Read from and write to a file using Java's file 1/0 capabilities.
+18. Multithreading: Create a simple multithreaded program and demonstrate thread synchronization.
+19. Lambda Expressions: Use lambda expressions to implement functional interfaces.
+20. Recursive Algorithms: Solve a problem using recursion, such as computing the factorial or Fibonacci sequence.
+
+=================================================

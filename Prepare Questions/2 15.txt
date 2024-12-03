@@ -1,0 +1,625 @@
+==================================================================================================
+Manual testing:
+
+1. STLC-Requirement analysis, Test planning, test case development, Test environment setup, test execution, test closure
+2. SDLC-Planning, analysis, design, development, testing, implementation and maintenance 
+3. smoke, sanity, UI testing, functional testing, regression testing, 
+4. agile methodology
+5. waterfall model
+6. blackbox testing, white box testing, greybox testing
+7. test case, bug life cycle
+8. difference between test strategy and test plan, test scenario
+9. JIRA-queries, defects, stories, tasks, subtasks, stories links to defects, link test rail
+10. builds-types of builds,
+11. installation of builds
+12. check the builds in artifactory
+13. what is artifacotry-a repository manager that supports all available software package types, 
+   enabling automated continous integration and delivery.
+14. requirement documents-uis spec, sketch, design system
+15. scrum process and retrospective meetings
+16. difference between retesting and sanity testing
+17. Integration testing- The purpose of Integration tests is to make sure that all modules integrate and work together as expected.
+18. Regression testing- Regression testing is a type of testing that deals with testing a previously tested software or application to ensure that the existing features were working
+
+19. AM and FM stations 
+530-1710 = 1180
+87.7-107.9=20.2
+
+20. what is adb and their commands
+
+21. boundary value analysis in manual testing
+Boundary Value Analysis (BVA) is a black-box testing technique used in software testing to identify errors at boundaries 
+rather than finding those that exist in the "middle" of input ranges.
+Minimum Valid Value: Test with 1 (just above the minimum valid value) and 2 (minimum valid value).
+Maximum Valid Value: Test with 99 (maximum valid value) and 100 (just below the maximum valid value).
+Invalid Values: Test with 0 (just below the minimum valid value) and 101 (just above the maximum valid value).
+
+22. difference between seviority and priority
+Priority refers to the order in which defects should be addressed and fixed
+Severity refers to the impact of a defect on the functionality of the application.(Critical, Major, Moderate, Minor, and Cosmetic)
+highpriority and low severioty example
+
+
+new topics
+------------------
+1. defect triage
+2. entry criteria and exit criteria in testing
+Meeting the entry criteria ensures the testing environment is set up correctly and test cases and data are ready for execution. 
+The exit criteria in test execution confirm that the test execution phase has been completed according to the defined testing scope and objectives
+
+3. defereed state in defects
+Rejected: If the developer feels that the bug is not genuine, he rejects the bug. Then the state of the bug is changed to “rejected”. 
+Deferred: The bug, changed to deferred state means the bug is expected to be fixed in next releases.
+
+4. if you get build at the end of the sprint what will you do as a tester
+5. where do you perform regression testing
+6. difference between regression and retesting
+7. if the defect is raised, developer said it is not a issue but as per the requirement it is issue what you will do
+8. on which bases will do estimation for user stories
+Agile estimation relies on using story points and the Fibonacci sequence, but they're not methods themselves. 
+Story points are a unit of measurement–numbers that express the size of a piece of work compared to other pieces of work.
+They factor in aspects such as effort, risk, and complexity.
+
+
+===============================================================================
+JIRA:
+1. Dashborads
+
+====================================================================================
+Automation testing:
+
+1. Automation set up-appium, java, android studio-ui automator/monitor, python, node js, eclipse, maven, Appium inspector
+2. Appium architecture
+3. Appium locators(id, class name, xpath, accessibility ID, android UI Automator, Android View Tag, iOS UI automation)
+4. keywords(launch app, close app, clickelement, screenshot, iselementexist, is displayed)
+5. folder structure
+6. what is maven
+7. keyword driven framework-test engineers develop test cases in excel using specific keywords
+and these keywords will be developed by automation team members as per the requirement
+8. uiautomatorviewer
+
+9. diff btw emulator and simulator
+Emulator imitates features of another device, mimicking both the software and hardware of a target device
+Simulator replicates software by mimicking various product configurations that exist in the real environment
+
+10. take manual test cases find feasibility
+11. pom- A Project Object Model or POM is the fundamental unit of work in Maven. 
+    It is an XML file that contains information about the project and configuration details 
+    used by Maven to build the project. It contains default values for most projects.
+12. we are using page object model in our project, we are writing xpaths in properties file call that file using java program
+
+13. how to get app package and app activity - adb shell dumpsys window windows or 
+adb shell dumpsys window | "mCurrentFocus"
+
+14. facing any issues in your project
+
+Programming in automation testing:
+--------------------------------------
+
+1. case1: system1 has eclipse, system2 has appium able to ececute scripts- no since device not there
+   case2: system1 has eclipse, system2 has appium and device able to execute scripts- no three should be in one device
+   case3: system1 has eclipse, appium and device able to execute scripts- yes
+
+2. Android studio logs(Gmlogger)-> device file explorer-> data-> gmlogger or logger
+
+3. desired capabilities in appium: 
+    DesiredCapabilities dc=new DesiredCapabilities();
+    dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
+    dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+    dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "12.0");
+    dc.setCapability(MobileCapabilityType.DEVICE_NAME, "3082524914000FO");
+    dc.setCapability("apppackage", "com.vivo.calculator");
+    dc.setCapability("appactivity", "com.vivo.calculator.Calculator");
+    URL url=new URL("http://127.0.0.1:4723/wd/hub");
+    AndroidDriver driver=new AndroidDriver(url,dc);
+    driver.findElement(By.id("com.vivo.calculator:id/digit7")).click();
+    System.out.println("Done.......................");
+
+4. how to read data from excel
+   File file = new File("C:\\demo\\employee.xlsx");   //creating a new file instance  
+   FileInputStream fis = new FileInputStream(file);   //obtaining bytes from the file  
+   XSSFWorkbook wb = new XSSFWorkbook(fis);          //creating Workbook instance that refers to .xlsx file
+   XSSFSheet sheet = wb.getSheetAt(0);     //creating a Sheet object to retrieve object (xssf - XML SpreadSheet Format) 
+   Iterator<Row> itr = sheet.iterator();    //iterating over excel file  
+     while (itr.hasNext())                 
+     {  
+      Row row = itr.next();  
+      Iterator<Cell> cellIterator = row.cellIterator();   //iterating over each column  
+        while (cellIterator.hasNext())   
+        {  
+         Cell cell = cellIterator.next();  
+         switch (cell.getCellType())               
+          {  
+           case Cell.CELL_TYPE_STRING:    //field that represents string cell type  
+           System.out.print(cell.getStringCellValue() + "\t\t\t");  
+           break;  
+           case Cell.CELL_TYPE_NUMERIC:    //field that represents number cell type  
+            System.out.print(cell.getNumericCellValue() + "\t\t\t");  
+            break;  
+            default:  
+           }  
+         }  
+        System.out.println("");  
+      }  
+     }  
+
+11. how to execute tests on multiple devices
+
+new topics in automation testing:
+------------------------------------------------
+
+1. logger class in java keyworddriven
+public static Logger logger = LoggerFactory.getLogger(TestDriver.class);
+logger.info("Starting appium server.............");
+TestDriver.logger.info("CAN message Sent  ");
+TestDriver.logger.error("Unable to send CAN Signal, Name of current method: sendCanMsg");
+
+2. scroll elements using appium(scrollable syntax)
+ scrollable syntax, from which class
+ driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0))
+    .scrollintoview(new UiSelector().textContains(\"text\").instance(0))").click(); //to scrolldown
+
+3. scroll elements by using touch actions
+TouchAction touchAction = new TouchAction(driver);
+touchAction.press(PointOption.point(startingXValue, endy)).waitAction(WaitOptions.waitOptions(Duration.ofMillis(1500)))
+
+4. scroll elements using coordinates
+JavascriptExecutor js = (JavascriptExecutor) driver;
+        // Scroll to specific coordinates (x, y)
+        js.executeScript("window.scrollTo(0, 500)");
+
+5. Long press the elements using touch actions
+TouchAction touchAction = new TouchAction(driver);
+touchAction.longPress(longPressOptions().withElement((ElementOption.element(element))))
+
+6. execute adb commands from command prompt from java
+String[] command = { "cmd.exe", "adb shell input tap x-coordinate y-coordinate"};
+Process process = Runtime.getRuntime().exec(command);
+
+7. how to connect to appium server(Connect from system to mobile)
+// Build Appium service
+AppiumServiceBuilder builder = new AppiumServiceBuilder();
+builder.withArgument(ServerArgument.LOCAL_TIMEZONE);
+builder.withIPAddress(HOST_NAME);
+builder.usingPort(APPIUM_SERVER_PORT);
+
+// Start the Appium server
+service = AppiumDriverLocalService.buildService(builder);
+service.start();
+
+8. date picker in appium
+
+
+==================================================================================================
+
+Selenium testing:
+
+1. selenium env setup
+2. System.setProperty("webdriver.chrome.driver","location of chrome driver")
+chromedriver driver=new chromedriver();
+
+WebDriverManager.chromedriver().setup();
+WebDriver driver=new ChromeDriver();
+
+3. diff webdriver and chrome driver
+ ChromeDriver- is a separate executable or a standalone server that Selenium WebDriver uses to launch Google Chrome. - chrome driver is class
+ WebDriver- refers to a collection of APIs used to automate the testing of web applications.(webdriver contains findelmentsby, click, gettext) - webdriver is interface
+
+4. locators-id, name, class name, tagname, link text, partial link text, xpath, css selector
+5. methods-get, navigate, gettitle,getcurrent url, getpagesource, find element, findelements,
+   switchto(), close, quit, manage()
+   difference b/w get and navigate
+   get- navigate to the particular url
+   navigate- navigate to url and able to perform navigate back, forward and refresh
+  driver.navigate().to(url);
+  driver.navigate.forward();
+  driver.navigate.back();
+  driver.navigate.refresh();
+
+6. difference between find elements and find element
+   find element-used to find single element from webbrowser
+   find elements -used to find no of elements at a time from web browser
+
+7. switchto - used to switch from page to page or page to window or window to page
+   driver.switchto.window.maximize();
+   driver.switchto.window.minimize();
+
+8. close() -closes only the current window on which Selenium is running automated tests. The WebDriver session, however, remains active.
+   quit() -method closes all browser windows and ends the WebDriver session
+   manage -used to maximize windows and working with cookies
+
+9. operations for web elements-click, sendkeys, clear, gettext, gettagname, getlocation()x,y, isselected, isdisplayed,
+isenabled, get attribute
+
+10. links, dropdowns-select by value, select by index, select by visible text, checkbox,
+   radiobutton, text field, img, screenshot
+
+11. synchronization-implicit wait, explicit wait, fluent wait(waits in selenium)
+   synchronization - to match the application speed and running script speed
+
+   Implicit wait -waits for an element to appear on the page,
+      driver.manage.timeouts.implicitlywait(duration.ofseconds(2000)) 
+      driver.manage.timeouts what is manage--manage is method
+
+   explicit wait -waits for a specific condition, such as the presence of an element or the element to be clickable. 
+      WebDriverWait wait = new WebDriverWait(driver,30);
+      wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'COMPOSE')]")));
+
+   Scope: Implicit wait applies globally, while explicit wait applies locally to a specific element
+
+	webdriverwait wait=new webdriverwait(driver,timuout)
+	wait wait=new flueentwait(driver)
+	.withTimeout(Duration.ofSeconds(SECONDS))
+	.PollingEvery(DURation.odSeconds(SECONDS))
+	.ignoring(Exception.class)
+
+fluent waits- fluent wait- polling wait every 5 secs(max time 30 sec)
+   
+12. advanced user interactions - click, doubleclick, contextclick(rightclick), movetoelement, draganddropby(slider), draganddrop, sendkeys
+    how to scroll elements using xlocation and y location(draganddropby method in selenium)
+
+13. selenium components-ide, rc, webdriver, grid
+
+   ide -you can simply record your interactions with browser to create test cases
+   rc -It is a testing framework that enables a QA or a developer to write test cases in 
+       any programming language in order to automate UI tests for web applications against any HTTP
+   webdriver -WebDriver is a web framework that permits you to execute cross-browser tests. 
+              This tool is used for automating web-based application testing to verify that it performs expectedly
+   grid - Grid is a smart proxy server that makes it easy to run tests in parallel on multiple machines.
+
+Selenium Grid- Using Cloud Selenium Grid, you can use Selenium to test hundreds of browsers in parallel, thus saving time and effort
+Selenium IDE- It then generates the test script (of the automated tests) in programming languages like C#, Java, Python, and Ruby and Selenese
+Selenium WebDriver- The WebDriver proves to be better than Selenium IDE and Selenium RC in many aspects. It implements a more modern and stable approach in automating the browser's
+
+14. what is selenium 
+15. what is frame work in selenium
+16. can selenium be automate windows or desktop applications
+
+17. alerts-popup in guru 99
+  simple alert-display information, 
+  prompt alert-user need to provide infomraion
+  confirmation alert-question confirmation alert
+
+  driver.SwitchTo().alert().aceept();
+  driver.SwitchTo().alert().dismiss();
+  driver.SwitchTo().alert().getText();
+  driver.SwitchTo().alert().Sendkeeys("a")
+
+18. window handling, open multiple windows how can you switch, method in windows handling
+switch between windows(swtich to 2nd and 3rd-get uniq id of 3rd window switch by using uniq id)
+
+WebDriverManager.chromedriver().setup();
+WebDriver driver=new ChromeDriver();
+driver.get("https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager/5.5.3");
+JavascriptExecutor js=(JavascriptExecutor)driver;
+js.executeScript("window.open()");
+
+ArrayList<String> tabs=new ArrayList<String>(driver.getWindowHandles());
+System.out.println(tabs);
+driver.switchTo().window(tabs.get(1));
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
+driver.get("https://mail.google.com/");
+driver.switchTo().window(tabs.get(0));
+
+get window handles which return type- getWindowHandle() return type is string and driver. getWindowHandle() return a String of alphanumeric
+
+19. exceptions in selenium -ElementNotVisibleException, TimeoutException, NoAlertPresentException, NoSuchElementException,
+    NoSuchWindowException, NoSuchFrameException, StaleElementReferenceException- This exception occurs when the web element
+    is no longer part of the web page.
+ 
+20. DOM structure- is the properties, methods, and events for all HTML elements
+    The Document Object Model (DOM) is an application programming interface (API) for HTML and XML documents.
+
+22. which element is fastest to find elements in webpage- ID
+
+23. Allure reports:
+add allure testng dependency in pom.xml file
+create test cases for browser testing->convert it to testng->run the file->
+to generate allure reports->right click on project->go to allure project location->go to cmd prompt->enter "allure serve"
+
+24. Paraller testing
+25. Cross browser testing
+
+
+new topics in selenium:
+----------------------------------------
+1. how to write xpath in chrome for selenium - press ctrl+f
+2. types of xpaths-with ex - absolute xpath relative xpath()
+relative xpath types:
+//tagname[@attribute Name='attribute value']
+//tagname[text()='text value']
+//tagname[contains(text(), 'textvalue')]
+//tagname[starts-with(an='av')]
+//tagname[@an='av' or @an='av']
+XPath=//*[contains(@id,'Name')
+
+axes methods in xpaths
+
+write xpath for login using or
+learn xpaths writing-xpaths in selenium
+
+how to write xpath for 2nd element(have 3 elements with same ID)
+//tag[@id='your_id'][2] --- by using index number
+
+3. types of testing for selenium
+
+4. what are broken links, how can we handle them
+Collect all the links present on a web page based on the <a> tag
+Send HTTP request for each link
+Verify the HTTP response code
+Determine if the link is valid or broken based on the HTTP response code
+Repeat the process for all links captured with the first step
+
+5. what are the blockers in selenium testing
+otp,bar codes, captcha
+
+6. return type of find elements method in selenium
+	return type of the findElements method is List<WebElement>
+7. without send keys how can we send data - java script executor
+
+8. how to read data from table in selenium
+
+9. how to switch to popups(we have 3 pop up in browser window)
+
+10. nosuchelement, element not found exception difference
+no such element-xpath will be matched and correct, but showing element is not found in dom - we can handle by explicit wait 
+element not found- xpath is not correct
+
+11. stale element reference exception
+
+12. how to handle pop ups in selenium(how to handle popups get from different browsers)
+
+13. return type of sendkeys method
+
+14. how to handle frames and iframes in selenium
+iframes
+int size=driver.findElements(By.tagName("iframe")).size();
+int size=driver.fE(by,tagNmae("iframes")).size()
+
+15. if Xpath is correct but geteting error, how to identifying the error
+  Inspect Dynamic Content: If the content of the webpage is dynamically generated or loaded asynchronously, the element you are trying to locate might not be 
+  available at the time your XPath expression is evaluated. You may need to wait for the element to become visible or interactable before attempting to 
+  locate it. You can use explicit waits or other synchronization techniques 
+  provided by your automation framework (e.g., Selenium WebDriver).
+
+16. how to test colors in selenium
+
+===========================================================
+
+TestNG
+
+1. testNG- Annootations in testng - STCMT(stateCM)
+testng annotations, grouping, priority, innovation count(how many times), data provider(annotation)
+STCM- @beforeSuite, @beforetest, @beforeclass, @beforemethod, @test,
+      @aftermethod, @afterclass, @aftertest, @aftersuite
+
+2. we have 50 test cases executed using testng 20 passed 30 failed, how can we execute remaining 30 test cases
+once execution done, In test ng framework - go to the testoutput folder->open testngfailed.xml file then run it(after fixed the issues got confirmation from developer)
+
+3. Assertions in selenium java (assert.equals(actual, expected), assert.notequals, assert.true(condition), assrt.false, assert.null, assert.notnull
+
+what assertions used in your project- hard assertions we have used
+
+Hard Asserts vs Soft Asserts
+Hard Assertions                                                 	Soft Assertions
+Test Execution will be aborted if the assert condition is not met	Test execution will continue till the end of the test case even if the assert condition is not met
+Does not have to invoke any methods to capture the assertions	        To view assertions result at the end of the test, the tester has to invoke assertAll()
+
+4. testng annotations
+In test ng, we have 10 test cases- how can we run 5th test case 10 times
+
+
+==========================================================================================
+
+JAVA:
+1. public static void main
+2. oops concepts-object, class, inheritance, polymorphism-method overloading and overriding, 
+abstraction and encapsulation
+
+polymorphism, inheritance and interface used in your project
+
+multiple inheritance supported or not
+
+3. Accessmodifies - private, default, protected, public(difference between default and protected)
+4. interface 
+5. constructor
+   a constructor is a block of codes similar to the method. It is called when an instance of the class is created.
+    At the time of calling constructor, memory for the object is allocated in the memory
+
+   constructor:
+   one class has multiple methods, one method has same name as class name which methods will execute
+
+6. keywords-this, static, super, final
+this - refers to the current object
+static - keyowrd used for memory management
+super - refers to the immediate parent class object
+final - variable - can not change the value of variable
+      - method - can not override that method
+      - class - can not extend it
+
+7. exceptions in java
+8. try, catch, throw, throwable
+9. datatypes, variable, methods
+
+premitive and non premitive datatypes
+
+Primitive data types - includes byte , short , int , long , float , double , boolean and char. 
+Non-primitive data types - such as String , 
+Arrays and Classes (you will learn more about these in a later chapter)
+
+Primitive data types are immutable, meaning their values cannot be changed once assigned. 
+Non-primitive data types are mutable and can be modified
+
+10. why main method is static
+    Java main() method is always static, so that compiler can call it without the creation of an object. 
+    In any Java program, the main() method is the starting point from where compiler starts program execution
+
+11. class1 has one method has void return type class2 has other method has integer return type
+ can we apply overriding to these methods(not possible)
+
+12. can we create java program with out class or main method
+ for main method:
+ yes we can execute java program without main method by using static block. static block in java is a group of statements
+ that gets executed only once when the class is loaded into the memory by java clssloader, it is known as 
+ static initialization block
+ for class:
+ Every Java program requires the presence of at least one class
+
+13. collectins concepts(hashmap, hashset)
+Java HashSet: A HashSet is a collection of items where every item is unique, and it is found in the java.util package:
+Hash map: A HashMap however, store items in "key/value" pairs
+
+Difference between list and array in java
+an array is a data structure generally consisting of sequential memory storing a collection of objects. 
+List is an interface in Java, which means that it may have multiple implementations
+
+14. for each loop
+
+for (elementType element : collection) {
+    // Body of the loop
+}
+The "for-each" loop in Java, also known as the enhanced for loop, provides a more concise way to iterate over elements in arrays or collections 
+(such as Lists, Sets, and Maps) without the need for explicit indexing or iterator manipulation.
+
+elementType: This is the data type of the elements in the collection.
+element: This is a variable that represents each individual element in the collection during each iteration.
+collection: This is the array or collection over which you want to iterate.
+
+14. arraylist - opps concepts in java
+
+15. string is related to which framework(string is not related to any framework - string stores the group of characters)
+
+16. static methods and non static methods
+
+17. difference between exception and error(we can handle exception and can not handle error)
+18. difference types of exceptions in java
+
+19. can we create object for interface
+We can't create object of interfaces because of the reason that : Interface is basically a complete abstract class. 
+That means Interface only have declaration of method not their implementation(method body)
+
+20. finally block--when will finally block executed
+21. static block
+
+22. exceptions in java
+
+23. difference between hash map and hash set(hashmap method return type, hashset return type)
+24. difference between list and set(if we declare method as list what is turn type of that method)
+
+new concepts in java:
+---------------------------------------------
+
+1. file upload
+javascriptExectuter js= (javascriptExectutor)driver;
+js.executescript(script, arguments)
+
+2. how to read xml file in java
+
+3. what is lamda expressions in java
+
+================================================================================
+
+Git, Gerrit and Jenkins
+
+1. Git and Gerrit
+2. what is CI, CD
+3. after cloning the project how can we switch from one branch to other branch - 
+get main branch code, 
+git checkout branchlink name
+
+4. git fetch, git merge
+before code review- git fetch, after merging- git merge
+
+5. rebase and merge difference
+
+6. how to handle merge conflicts in gerrit
+7. jenkins
+
+==========================================
+
+programs in java
+
+1. array list [0,0,1,5,0,4] output--> [0,0,0,1,5,4]
+2. print 10 prime numbers, prime number program
+3. java programs(string character occurances)
+4. reverse string(read string from keyboard)
+5. string program count number of characters in string input: satya, s-1,a-2,t-1
+6. programe for 
+Remove all occurrences of an Element
+//		Input: nums = [3,2,2,3], val = 3
+//		Output: nums = [2,2]
+7. array a=1,5,6,4 output-->print ascending order, descending order
+8. program to get ovels in string then count the number
+9. program to add numbers in list
+10. program - oder of n complexity - we have sorted array a=[0,0,0,1,1,1] -get output as [1,1,1,0,0,0] with order of n complexity
+11. java programs to arrary a[]={0,0,1,2,3} output {1,2,3,0,0}
+12. remove duplicates in string, remove digits in string using regular expression
+13. sorting in java
+14. pattern program 
+*
+**
+***
+
+====================================================
+
+programs in selenium:
+1. screenshot capturing
+2. how to download file from browser using selenium
+3. how to handle multiple frames(write program)
+4. program to lanch amazon site, search for samsum mobiles then list out the mobile with price using hash map
+In flipcart page - have t and c find out xpath wituput using index - we have 4 t and c - highlight only 2nd item
+
+============================
+general questions
+
+1. we have scenario of login amazon site and added elements if cart then find out integration testing and security testing
+Integration Testing: Login Integration Testing, Cart Integration Testing
+Security Testing: Authentication Testing, Authorization Testing, Session Security Testing: Test the security of user sessions, including session hijacking and session 
+fixation vulnerabilities
+
+2. x lies between o and 1, what is the smallest or largest value
+options: x, x*x, 1/x, -x
+
+3. 20 persons average equal to zero, then persons equal to
+
+=================================================
+New topics:
+
+1. cucumber BDD framework - glue, step definitions, hooks, feature files, scenario outline--, hooks
+hook and background key difference
+2. project - folder structure, cucumber framework
+3. python, robot framework
+4. API testing
+5. cypress
+6. java script
+7. idea about sql
+8. java8 features 
+9. data driven testing
+10. IOS testing
+11. API testing
+================================================
+
+1. switch to frames(frames handling)
+2. no such element exception, stale element reference exception
+3. iframes and main frames
+4. how to download file
+5.  //Remove all occurrences of an Element
+//Input: nums = [0,0,1,2,4,0,4], val = 0
+//Output: nums = [0,0,0,0,1,2,4,4]
+
+=====================================================
+
+Recursion in Java:
+Recursion in java is a process in which a method calls itself continuously. A method in java that calls itself is called recursive method.
+It makes the code compact but complex to understand.
+
+Lambda Expressions:
+A lambda expression is a short block of code which takes in parameters and returns a value. 
+Lambda expressions are similar to methods, but they do not need a name and they can be implemented right in the body of a method
+
+Bug triage in software testing:
+In software engineering, triaging is a process where each bug is prioritized on its severity, frequency, risk, impact on the team, etc. 
+The goal of triage is to evaluate, prioritize, and assign the resolution of bugs or defects
+
+
+
